@@ -3,8 +3,7 @@
 .section{
 	width: 100%;
 	height: 100vh;
-background-repeat: no-repeat;
-    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+	background-color: #C3014D;
 }
 
 
@@ -32,6 +31,11 @@ background-repeat: no-repeat;
 	width: 100%;
 }
 
+
+.informacion{
+	height: 100vh;
+	width: 100%;
+}
 
 .panel-heading {
 	color: #00415d;

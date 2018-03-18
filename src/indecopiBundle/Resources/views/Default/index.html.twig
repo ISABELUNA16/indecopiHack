@@ -2,106 +2,255 @@
 {% block title %}Indecopi{% endblock %}
 {% block body %}
 
-<header>
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>                       
-                <img src="{{ asset('assets/images/logo.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />                                      
-            </div>
+<header class="header-index" id="inicio" >
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <br>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Infórmate</a></li>
-                    <li><a href="">Alertas</a></li>
-                    <li><a href="">Reclamos</a></li>
-                    <li><a href="{{url('prueba_login')}}">Login/Regístro</a></li>
-                   
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light navbar-bgColor fixed-top">
+  <a class="navbar-brand text-white" href="#">Indecopi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-white"  id="liInicio" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="liInformate" href="#">Informate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" id="liAlertaProductos" href="#">Alertas</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-white" ></a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <a href="{{url('prueba_login')}}"><button class="btn  btn-outline-light">Login/Registro</button></a>
+    </span>
+  </div>
+</nav>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{{ asset('img/indecopi1.png') }}" alt="First slide">
         </div>
-    </nav>
-
-    <div id="carousel-1" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-1" data-slide-to="0" class="active" ></li>
-            <li data-target="#carousel-1" data-slide-to="1" ></li>
-            <li data-target="#carousel-1" data-slide-to="2" ></li>
-            <li data-target="#carousel-1" data-slide-to="3" ></li>
-            <li data-target="#carousel-1" data-slide-to="4" ></li>
-           
-           
-        </ol>
-        <!-- contenedor de los slide -->
-
-        <div class="carousel-inner" role="listbox">
-            <!-- #1 -->
-            <div class="item active">
-                <img src="{{ asset('assets/images/slide3.jpg') }}" class="img-responsive" alt="" style="width:100%; height:500px;" />
-            </div>
-            <!-- #2 -->
-            <div class="item">
-                <img src="{{ asset('assets/images/slide4.jpg') }}" class="img-responsive" alt="" style="width:100%; height:500px" />
-            </div>
-            <!-- #3 -->
-            <div class="item">
-                <img src="{{ asset('assets/images/slide2.jpg') }}" class="img-responsive" alt="" style="width:100%;height:500px" />
-            </div>
-            <!-- #4 -->
-            <div class="item">
-                <img src="{{ asset('assets/images/slide5.jpg') }}" class="img-responsive" alt="" style="width:100%;height:500px" />
-            </div>
-           
-           
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{{ asset('img/indecopi2.jpg') }}" alt="Second slide">
         </div>
-        <!-- Controles -->
-        <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{{ asset('assets/images/slide4.jpg') }}" alt="Third slide">
+        </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 </header>
-<section class="proceso-inscripcion">
 
-     <div class="proceso">
-        <div class="proceso-usuario">
-            <div class="row">
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    <h4>¿?</h4>
-                    <p>We build pretty complex tools and this allows us to take designs and turn them into functional quickly and easily</p>
-                </div>
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    
-                    <h4>Powerful Design</h4>
-                    <p>We build pretty complex tools and this allows us to take designs and turn them into functional quickly and easily</p>
-                  
-                </div>
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    
-                    <h4>Customizability</h4>
-                    <p>We build pretty complex tools and this allows us to take designs and turn them into functional quickly and easily</p>
-                    
-                </div>
-            </div>
+
+<section class="informacion" id="informate">
+
+
+    
+<div id="accordion" class="container">
+<h2 style="color:#C3014D;">Sistema Integrado para la protección del consumidor.</h2>
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  style="color:#888686; text-decoration:none; font-size:0.9em; font-weight:bold;">
+          Quienes se benefician?
+          <i class="icon-book"></i>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body" >
+        <ul style="font-size:1.4em; list-style:none;">
+            <li>
+                - Los consumidores que utilizan entornos digitales para adquirir o informarse acerca
+                de un producto o servicio. (páginas web, aplicaciones).</li>
+            <li>
+                - Las empresas o proveedores que ofrecer sus productos o servicios a través de una
+                plataforma digital.
+            </li>
+        </ul>
+      </div>
+
+        <div class="card-footer" style="display:flex; justify-content:space-around; ">
+        <span style="color:#424242;font-weight:bold;" >Deseas integrar la tecnología de indecopi en tu empresa?</span>
+        <button class="btn  btn-sm" style="background-color:#F7A700; font-size:12px; color:white; font-weight:bold;"  >Indecopi Developers</button>    
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#888686; text-decoration:none; font-size:0.9em; font-weight:bold;">
+          Como funciona?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <ul style="font-size:1.4em;list-style:none;">
+            <li>
+                A través de un sistema digital soportado por la tecnología basado en API ́s de
+                INDECOPI para uso libre y gratuito de todos los beneficiarios.
+            </li>
+        </ul>
+      </div>
+        <div class="card-footer" style="display:flex; justify-content:space-around; ">
+        <span style="color:#424242;font-weight:bold;" >Deseas integrar la tecnología de indecopi en tu empresa?</span>
+        <button class="btn  btn-sm" style="background-color:#F7A700; font-size:12px; color:white; font-weight:bold;"  >Indecopi Developers</button>    
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#888686; text-decoration:none; font-size:0.9em; font-weight:bold;">
+          Qué servicio provee y en que procesos se involucra?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <ul style="font-size:1.4em;list-style:none;">
+            <li>
+                A través de un sistema digital soportado por la tecnología basado en API ́s de Ofrece
+                protección a través de 3 niveles de procesos (Intención de compra, Compra insatisfecha,
+                Reclamo inatendido) con el fin de fomentar el consumo responsable, atención eficiente de
+                reclamos dentro de la empresa y la gestión eficiente del reclamo ante Indecopi.
+            </li>
+        </ul>
+      </div>
+        <div class="card-footer" style="display:flex; justify-content:space-around; ">
+        <span style="color:#424242;font-weight:bold;">Deseas integrar la tecnología de indecopi en tu empresa?</span>
+        <button class="btn  btn-sm" style="background-color:#F7A700; font-size:12px; color:white; font-weight:bold;"  >Indecopi Developers</button>    
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="color:#888686; text-decoration:none; font-size:0.9em; font-weight:bold;">
+          Qué servicio provee y en que procesos se involucra?
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+        <ul style="font-size:1.4em; list-style:none;">
+            <li>
+                A través de un sistema digital soportado por la tecnología basado en API ́s de Ofrece
+                protección a través de 3 niveles de procesos (Intención de compra, Compra insatisfecha,
+                Reclamo inatendido) con el fin de fomentar el consumo responsable, atención eficiente de
+                reclamos dentro de la empresa y la gestión eficiente del reclamo ante Indecopi.
+            </li>
+        </ul>
+      </div>
+
+        <div class="card-footer" style="display:flex; justify-content:space-around; ">
+        <span style="color:#424242;font-weight:bold;">Deseas integrar la tecnología de indecopi en tu empresa?</span>
+        <button class="btn  btn-sm" style="background-color:#F7A700; font-size:12px; color:white; font-weight:bold;"  >Indecopi Developers</button>    
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+<section class="alertaProductos" id="alertaproductos">
+
+<div class="container container-alert-prod">
+    
+<div class="row">
+    
+
+<div>
+    <h2 style="color:#C3014D;">Alertas de Consumo</h2>
+</div>
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="../img/articulo1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Multiprotector Perfect Block Kids</h5>
+      <p class="card-text">CETCO S.A. informó al Indecopi, sobre el retiro de sus productos Perfect Block Kids - Multiprotector solar de rostro y cuerpo para niños de FPS 50.. <span style="color:#C3014D;font-weight:bold; "><a href="#">leer mas</a></span></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">13/03/2018</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../img/articulo2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Teteras eléctricas KitchenAid</h5>
+      <p class="card-text">informó al Indecopi, sobre el llamado a revisión del producto denominado tetera eléctrica KitchenAid, fabricado entre enero de 2013 a junio de 2017... <span style="color:#C3014D;font-weight:bold;"><a href="#">leer mas</a></span></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">22/02/2018</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../img/articulo3.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Autos Lexus (LC500, GS-F y RC-F)</h5>
+      <p class="card-text">Toyota del Perú S.A. informó al Indecopi, sobre el llamado de revisión de sus vehículos de la marca Lexus, modelos LC500, GS-F y RC-F, ...<span style="color:#C3014D;font-weight:bold;"><a href="#"> leer mas</a></span>
+      </p>
+
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">20/02/2018</small>
+    </div>
+  </div>
+</div>
+    
+    <div class="container-paginator">
+        <div>
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item ">
+              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Siguiente</a>
+            </li>
+          </ul>
+        </nav>
         </div>
     </div>
 
+    </div>
+</div>  
+
 </section>
+
+
+
+
 
 <footer>
 
@@ -112,7 +261,24 @@
 {% block javascripts %}
 
 <script src="{{asset('assets/vendor/jquery/dist/jquery.js')}}"></script>
-<script src="{{asset('assets/vendor/bootstrap/dist/js/bootstrap.js')}}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+    
+    $(document).ready(function(){
+        let functionScroll = (start, end) => {
+            $(start).on('click', function() {
+                var posicion = $(end).offset().top;
+            $('html, body').animate({
+                scrollTop: posicion
+            }, 1000); 
+            });
+         };
+        functionScroll('#liInicio','#inicio');
+        functionScroll('#liInformate','#informate');
+        functionScroll('#liAlertaProductos','#alertaproductos');
 
+    });
+
+</script>
 
 {% endblock %}

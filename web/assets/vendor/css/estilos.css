@@ -4,6 +4,42 @@
 	font-size: 16px;
 }
 
+.navbar-bgColor{
+	background-color:black;
+}
+
+.header-index{
+	height: 100vh;
+	overflow: hidden;
+	width: 100%;
+}
+
+.alertaProductos{
+	height: 100vh;
+	width: 100%;
+	padding-top:12vh;
+}
+
+	.container-alert-prod{
+		
+	}
+
+.informacion{
+	padding-top:12vh;
+	height: 100vh;
+	width: 100%;	
+}
+
+.container-paginator{
+	width: 100%;
+	
+}
+
+	.container-paginator>div{
+		padding: 15px 5px 0 0;
+		display: flex;
+		flex-direction: row-reverse;
+	}
 
 body{
 
