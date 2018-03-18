@@ -1,0 +1,237 @@
+{% extends '::base.html.twig' %}
+{% block title %}Indecopi{% endblock %}
+{% block body %}
+<header>
+	<nav class="navbar navbar-inverse" style="background:#A20F0F; border-color:#A20F0F" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               		<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> 
+
+                <img src="{{ asset('assets/images/logo.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />                                                         
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <br>				
+                <ul class="nav navbar-nav navbar-right">
+                
+                    <li title="Cerrar sesión"><a href="{{url('indecopi_homepage')}}"><i class="btn icon-logout" style="font-size:1.5em; color:white;" ></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="proceso-inscripcion">
+	<div style="width:93%">
+		<p class="text-right" style="color:grey" >Sesión iniciada: USUARIO</p>
+	</div>
+
+
+	<div class="container text-center" style="margin-top: 10px; margin-bottom: 30px;">
+
+		<hr>
+		
+		<div id="alert-info" class="alert alert-warning alert-dismissible text-center" role="alert" style="margin-top: 10px; margin-bottom: 20px;">
+		<button id="btn-close-alert-info" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+			<p> wyrweuyuryweb ueruweyr uweyruewyr uewryuwe rwuuyer ewur uewryuw eruew uweryu ewryewuyr weyruewyr ewu uewyruewr uyewryw er</p>
+		</div>
+
+		<div id="ficha-participante-container" class="container-card col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="card">
+				<div class="card-header text-center" role="tab">
+					<h3>Listado de reclamos realizados</h3>
+				</div>
+				<hr>
+				<div class="card-body">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="input-group col-xs-5 col-sm-5 col-md-5 col-lg-5">
+								 	<span class="input-group-addon" style="background:#0B3861; color:white">Buscar</span>
+								  	<input class="filtrar form-control" type="text"  placeholder=" Ingresa los campos a buscar ">
+								</div>
+								<br>
+								<div class="panel panel-default" style="overflow-x:auto;">
+									<table class="table"> 
+										<thead style="background:#0B3861; color:white"> 
+											<tr> 
+												<th></th>
+												<th class="text-center">Código</th>
+												<th class="text-center">Proveedor</th> 
+												<th class="text-center">Descripción</th>
+												<th class="text-center">Fecha transacción</th> 
+												<th class="text-center">Estado</th> 
+												
+											</tr>
+
+										</thead> 
+
+										<tbody class="buscar" id="seguimientoData" style="color:#494343"> 
+
+												<tr id="Mostrar_Tabla2" data-id="2" class="opciones">
+													<td><button type="button" class="btn btn-default"><i class="icon-plus-square" style="font-size:1.2em; margin-top:5px;" ></button></td>
+													<td>2124-2018</td>
+													<td>QUIMICA SUIZA SAC</td>
+													<td>MALA ATENCIÓN</td>
+													<td>12/04/2017</td>
+													<td><button type="button" class="btn btn-danger" disabled>Pendiente</button></td>
+														
+												</tr>
+												<tr id="Tabla_Mostrar2">
+													<td colspan="6"> 
+														<div  class="alert alert-danger alert-dismissible" role="alert" style="margin-top: 10px; margin-bottom: 20px;">
+						                                	<button id="btn-close-alert-info" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+						                                    <p>1.- Primera fecha de conciliación: 15/03/2018
+						                                    <br>
+						                                    </p>
+						                                 
+						                                </div>
+                            						</td>
+												</tr>
+												<tr id="Mostrar_Tabla3" data-id="3" class="opciones">
+													<td><button type="button" id="mas-info" class="btn btn-default"><i class="icon-plus-square" style="font-size:1.2em; margin-top:5px;" ></button></td>
+													<td>2124-2018</td>
+													<td>QUIMICA SUIZA SAC</td>
+													<td>PRODUCTO VENCIDO </td>
+													<td>12/04/2017</td>
+													<td><button type="button" class="btn btn-danger" disabled>Pendiente</button></td>	
+													
+												</tr>	
+												<tr id="Tabla_Mostrar3">
+													<td colspan="6"> 
+														<div  class="alert alert-danger alert-dismissible" role="alert" style="margin-top: 10px; margin-bottom: 20px;">
+						                                	<button id="btn-close-alert-info" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+						                                    <p>1.- Primera fecha de conciliación: 15/03/2018</p>
+						                                    <p>2.- Segunda fecha de conciliación: 18/03/2018</p>
+						                                </div>
+                            						</td>
+												</tr>
+
+												<tr id="Mostrar_Tabla4" data-id="4" class="opciones">
+													<td><button type="button" class="btn btn-default"><i class="icon-plus-square" style="font-size:1.2em; margin-top:5px;" ></button></td>
+													<td>0023-2018</td>
+													<td>MINIMARKET TODITO </td>
+													<td>COBRO ELEVADO</td>
+													<td>12/04/2017</td>
+													<td><button type="button" class="btn btn-warning" disabled>En proceso</button></td>	
+													
+												</tr>	
+												<tr id="Tabla_Mostrar4">
+													<td colspan="6"></td>
+												</tr>
+												<tr id="Mostrar_Tabla5" data-id="5" class="opciones">
+														
+													<td><button type="button" class="btn btn-default"><i class="icon-plus-square" style="font-size:1.2em; margin-top:5px;" ></button></td>
+													<td>2984-2017</td>
+													<td>MULTIVALUADOS SA</td>
+													<td>PRODUCTO EN MAL ESTADO</td>
+													<td>12/04/2018</td>
+													<td><button type="button" class="btn btn-warning" disabled>En proceso</button></td>	
+													
+												</tr>	
+												<tr id="Tabla_Mostrar5">
+													<td colspan="6"></td>
+												</tr>
+												<tr id="Mostrar_Tabla6" data-id="6" class="opciones">
+													<td><button type="button" class="btn btn-default"><i class="icon-plus-square" style="font-size:1.2em; margin-top:5px;" ></button></td>
+													<td>2124-2018</td>
+													<td>LOS JARDINES DE SAN JOSE</td>
+													<td>MAL SERVICIO</td>
+													<td>12/01/2017</td>
+													<td><button type="button" class="btn btn-success" disabled>Conciliado</button></td>	
+													
+												</tr>				
+												<tr id="Tabla_Mostrar6">
+													<td colspan="6"></td>
+												</tr>		
+										</tbody> 
+									</table>
+								</div>
+
+							</div>
+
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<br>
+								<div class="input-group">
+									<span class="input-group-addon alert-success">Conciliados</span>
+									<p id="inscritos-horario" class="form-control">1</p>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<br>
+								<div class="input-group">
+									<span class="input-group-addon alert-warning">En proceso</span>
+									<p id="asistentes-horario" class="form-control">2</p>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<br>
+								<div class="input-group">
+									<span class="input-group-addon alert-danger">Pendientes</span>
+									<p id="asistentes-horario" class="form-control">2</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+
+<br>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">  
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <br><br>
+                <p style="font-size:12px;">SEDE CENTRAL LIMA SUR: Calle de la Prosa 104, San Borja. </p>
+                <p style="font-size:12px;">SEDE LIMA NORTE: Av. Carlos Izaguirre 988, Urb. Las Palmeras, Los Olivos.<br>
+                E-mail:  consultas@indecopi.gob.pe</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <br><br>
+                <img src="{{ asset('assets/images/logo.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />
+            
+            </div>
+        </div>
+        <br>
+        <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyright">&copy; 2018 Todos los derechos reservados</p>
+    </div>
+</footer>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script src="{{asset('assets/vendor/jquery/dist/jquery.js')}}"></script>
+<script src="{{asset('assets/vendor/bootstrap/dist/js/bootstrap.js')}}"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+
+<script type="text/javascript">
+
+	
+	$('.opciones').on('click', function(){
+		toggle(this)
+	})
+	
+	function toggle(tableid){
+	  var id = jQuery(tableid).data('id')
+	  jQuery('#Tabla_Mostrar'+id).toggle();
+	}
+
+
+
+
+</script>
+{% endblock %}
