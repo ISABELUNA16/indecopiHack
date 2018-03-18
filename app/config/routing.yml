@@ -1,3 +1,8 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+indecopi_usuario:
+    resource: "@IndecopiUsuarioBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+#app:
+#    resource: '@AppBundle/Controller/'
+#    type: annotation

@@ -1,0 +1,4 @@
+services:
+#    indecopi_usuario.example:
+#        class: IndecopiUsuarioBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
