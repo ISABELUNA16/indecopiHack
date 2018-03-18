@@ -14,15 +14,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class DefaultController extends Controller
 {
-    /**
-     * @Route("/")
-     */
-    public function indexAction()
-    {
-        return $this->render('IndecopiUsuarioBundle:Default:index.html.twig');
-    }
-
-
+   
     /**
      * @Route("/registerUser")
      * @Method("POST")

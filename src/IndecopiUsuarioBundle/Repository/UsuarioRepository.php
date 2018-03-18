@@ -10,4 +10,5 @@ namespace IndecopiUsuarioBundle\Repository;
  */
 class UsuarioRepository extends \Doctrine\ORM\EntityRepository
 {
+	
 }

@@ -6,6 +6,6 @@ indecopi_usuario:
 
 indecopi:
     resource: "@indecopiBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /control
 
 
