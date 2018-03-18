@@ -6,14 +6,14 @@
 <header class="header-index" id="inicio" >
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-bgColor fixed-top">
-  <a class="navbar-brand text-white" href="#">Indecopi</a>
+  <a class="navbar-brand text-white" href="#"><img src="../img/logo_indecopi_chiqui.png" width="120" height="38" ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link text-white"  id="liInicio" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white"  id="liInicio" href="{{url('indecopi_principalUsuario')}}">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" id="liInformate" href="#">Informate</a>
@@ -31,95 +31,27 @@
   </div>
 </nav>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="{{ asset('img/indecopi1.png') }}" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="{{ asset('img/indecopi2.jpg') }}" alt="Second slide">
-
-<header>
-
-
-        
-    <nav class="navbar navbar-expand-lg navbar-light navbar-bgColor fixed-top">
-        <img src="{{ asset('assets/images/logo.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />  
-        <!--<a class="navbar-brand text-black" href="#">Indecopi</a>   -->
-        
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">     
-        
-        <span class="navbar-toggler-icon"></span>   
-        </button>   
-       
-        <div class="collapse navbar-collapse" id="navbarText">    
-            <ul class="navbar-nav mr-auto">       
-                <li class="nav-item active">        
-                    <a class="nav-link" href="#"><strong>Inicio</strong> <span class="sr-only">(current)</span></a>      
-                </li>       
-                <li class="nav-item">        
-                    <a class="nav-link" href="#"><strong>Infórmate</strong></a>
-                </li>       
-                <li class="nav-item">         
-                    <a class="nav-link" href="#"><strong>Alertas</strong></a> 
-                </li>         
-                <li class="nav-item">         
-                    <a class="nav-link" href="#"><strong>Reclamos</strong></a>       
-                </li>         
-                <li class="nav-item">        
-                    <a class="nav-link" ></a>     
-                </li>     
-            </ul>     
-            <span class="navbar-text">      
-                <a href="{{url('prueba_login')}}"><button class="btn">Acceso al sistema</button></a>    
-            </span>  
-        </div> 
-    </nav>
-
-
-    <div id="carousel-1" class="carousel slide" data-ride="carousel">
-        
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-1" data-slide-to="0" class="active" ></li>
-            <li data-target="#carousel-1" data-slide-to="1" ></li>
-            <li data-target="#carousel-1" data-slide-to="2" ></li>
-            <li data-target="#carousel-1" data-slide-to="3" ></li>
-            <li data-target="#carousel-1" data-slide-to="4" ></li>   
-        </ol>
-        
-
-        <div class="carousel-inner" role="listbox">
-            <!-- #1 -->
-            <div class="item active">
-                <img src="{{ asset('assets/images/slide3.jpg') }}" class="img-responsive" alt="" style="width:100%; height:500px;" />
-            </div>
-            <!-- #2 -->
-            <div class="item">
-                <img src="{{ asset('assets/images/slide4.jpg') }}" class="img-responsive" alt="" style="width:100%; height:500px" />
-            </div>
-            <!-- #3 -->
-            <div class="item">
-                <img src="{{ asset('assets/images/slide2.jpg') }}" class="img-responsive" alt="" style="width:100%;height:500px" />
-            </div>
-            <!-- #4 -->
-            <div class="item">
-                <img src="{{ asset('assets/images/slide5.jpg') }}" class="img-responsive" alt="" style="width:100%;height:500px" />
-            </div>
-           
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="{{ asset('assets/images/slide4.jpg') }}" alt="Third slide">
-        </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">   
+    <div class="carousel-inner">     
+    <div class="carousel-item active">       
+    <img class="d-block w-100" src="{{asset('img/indecopi1.png')}}" alt="First slide">     
+    </div>     
+    <div class="carousel-item">
+    <img class="d-block w-100" src="../img/slider2.jpg" alt="Second slide">     
+    </div>     
+    <div class="carousel-item">       
+    <img class="d-block w-100" src="../img/indecopi1.png" alt="Third slide">    
+    </div>  
+    </div>  
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">    
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>    
+     <span class="sr-only">Previous</span>  
+     </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">   
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>   
+    <span class="sr-only">Next</span>  
+     </a> 
+ </div>
 
 </header>
 
@@ -316,6 +248,9 @@
 </div>  
 
 </section>
+<footer class="footer" style="background-color:black;">     <div class="container">         <div class="row" style="display:flex; align-items:center; justify-content:space-between; ">                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center" style="padding-top:50px;">                 <p style="font-size:12px;">SEDE CENTRAL LIMA SUR: Calle de la Prosa 104, San Borja. </p>                 <p style="font-size:12px;">SEDE LIMA NORTE: Av. Carlos Izaguirre 988, Urb. Las Palmeras, Los Olivos.<br>                 E-mail:  consultas@indecopi.gob.pe</p>             </div>                            <img src="{{ asset('assets/images/logo.png') }}" width="290" height="40" >                                   </div>         <br>         <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyright">&copy; 2018 Todos los derechos reservados</p>     </div> 
+</footer>
+
 
 
 

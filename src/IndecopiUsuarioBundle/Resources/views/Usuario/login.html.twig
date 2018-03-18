@@ -3,31 +3,20 @@
 {% block body %}
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-bgColor fixed-top">
-    <a class="navbar-brand text-white" href="#">Indecopi</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link text-white"  id="liInicio" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" id="liInformate" href="#">Informate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" id="liAlertaProductos" href="#">Alertas</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link text-white" ></a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        <a href="{{url('prueba_login')}}"><button class="btn  btn-outline-light">Login/Registro</button></a>
-      </span>
-    </div>
-  </nav>
+ <nav class="navbar navbar-expand-lg navbar-light navbar-bgColor fixed-top">
+  <a class="navbar-brand text-white" href="#"><img src="../img/logo_indecopi_chiqui.png" width="120" height="38" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-white"  id="liInicio" href="{{url('indecopi_homepage')}}">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
 
 </header>
 
@@ -178,28 +167,7 @@
 </div>  
 
 </section>
-<footer class="footer">
-    <div class="container">
-        <div class="row">  
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
-                <br><br><br><br>
-                <p style="font-size:12px;">SEDE CENTRAL LIMA SUR: Calle de la Prosa 104, San Borja. </p>
-                <p style="font-size:12px;">SEDE LIMA NORTE: Av. Carlos Izaguirre 988, Urb. Las Palmeras, Los Olivos.<br>
-                E-mail:  consultas@indecopi.gob.pe</p>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <br><br>
-                <img src="{{ asset('assets/images/logo_indecopi_chiqui.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />
-            
-            </div>
-        </div>
-        <br>
-        <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyright">&copy; 2018 Todos los derechos reservados</p>
-    </div>
-</footer>
-
+<footer class="footer" style="background-color:black;">     <div class="container">         <div class="row" style="display:flex; align-items:center; justify-content:space-between; ">                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center" style="padding-top:50px;">                 <p style="font-size:12px;">SEDE CENTRAL LIMA SUR: Calle de la Prosa 104, San Borja. </p>                 <p style="font-size:12px;">SEDE LIMA NORTE: Av. Carlos Izaguirre 988, Urb. Las Palmeras, Los Olivos.<br>                 E-mail:  consultas@indecopi.gob.pe</p>             </div>                            <img src="{{ asset('assets/images/logo.png') }}" width="290" height="40" >                                   </div>         <br>         <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyright">&copy; 2018 Todos los derechos reservados</p>     </div> </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
