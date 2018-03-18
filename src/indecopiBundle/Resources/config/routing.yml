@@ -1,0 +1,25 @@
+indecopi_homepage:
+    path:     /
+    defaults: { _controller: indecopiBundle:Default:index }
+
+indecopi_principalUsuario:
+    path:     /principalUsuario
+    defaults: { _controller: indecopiBundle:Default:principalUsuario }
+    methods:  [GET,POST]
+
+indecopi_nuevoReclamo:
+    path:     /nuevoReclamo
+    defaults: { _controller: indecopiBundle:Default:nuevoReclamo}
+    methods:  [GET,POST]
+
+indecopi_seguimiento:
+    path:     /seguimiento
+    defaults: { _controller: indecopiBundle:Default:seguimiento}
+    methods:  [GET,POST]
+
+indecopi_participarReclamo:
+    path:     /participarReclamo
+    defaults: { _controller: indecopiBundle:Default:participarReclamo}
+    methods:  [GET,POST]
+
+
