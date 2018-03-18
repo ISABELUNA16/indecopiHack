@@ -4,6 +4,7 @@ indecopi_usuario:
     type:     annotation
     prefix:   /
 
+
 #app:
 #    resource: '@AppBundle/Controller/'
 #    type: annotation
@@ -15,10 +16,4 @@ indecopi:
 #app:
   #  resource: "@AppBundle/Resources/config/routing.yml"
   #  prefix:   /
-
-#app:
- 
- #   resource: '@AppBundle/Controller/'
- #   type: annotation
-
 
