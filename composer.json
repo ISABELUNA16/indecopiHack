@@ -6,7 +6,9 @@
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle",
-            "IndecopiUsuarioBundle\\": "src/IndecopiUsuarioBundle"
+            "IndecopiUsuarioBundle\\": "src/IndecopiUsuarioBundle",
+            "indecopiBundle\\": "src/indecopiBundle"
+
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },

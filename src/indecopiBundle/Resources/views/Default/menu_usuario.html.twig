@@ -1,0 +1,125 @@
+{% extends '::base.html.twig' %}
+{% block title %}Indecopi{% endblock %}
+{% block body %}
+
+<header>
+	<nav class="navbar navbar-inverse" style="background:#8D8888; border-color:#8D8888" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               		<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> 
+
+                <img src="{{ asset('assets/images/logo.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />                                                         
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <br>				
+                <ul class="nav navbar-nav navbar-right">
+                
+                    <li title="Cerrar sesión"><a href="{{url('indecopi_homepage')}}"><i class="btn icon-logout" style="font-size:1.5em; color:white;" ></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="proceso-inscripcion">
+	<div style="width:93%">
+		<p class="text-right" style="color:grey" >Sesión iniciada: USUARIO</p>
+	</div>
+	<div class="container text-center" style="margin-top: 10px; margin-bottom: 30px;">
+
+		<hr>
+		
+		<div id="alert-info" class="alert alert-warning alert-dismissible text-center" role="alert" style="margin-top: 10px; margin-bottom: 20px;">
+		<button id="btn-close-alert-info" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+			<p> Visualiza opciones en dónde puedas realizar los distintos procesos como reclamos, seguimiento de tus reclamos, participación en reclamos colectivos y visualiza a tus colaboradores que apoyen tus reclamos.</p>
+		</div>
+
+		<hr>
+		<div class="row">
+		<div id="option-beneficiarios" class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center">
+			<a href="{{url('indecopi_nuevoReclamo')}}">
+				<div class="card">
+					<div style="display:flex; justify-content: center;">
+						<img  src="{{ asset('assets/images/guia.png') }}" width="120" height="120" >
+					</div>
+					<p class="title-card">¿Quieres realizar algún reclamo ?</p>
+				</div>
+			</a>
+		</div>
+
+		<div id="option-validacion" class="col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center">
+			<a href="{{url('indecopi_seguimiento')}}">
+				<div class="card">
+					<div style="display:flex; justify-content: center;">
+						<img src="{{ asset('assets/images/icon_confirmar.png') }}" width="120" height="120">
+					</div>
+					<p class="title-card">Seguimiento de reclamos</p>
+				</div>
+			</a>
+		</div>
+		<div id="option-validacion" class="col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center">
+			<a href="{{url('indecopi_participarReclamo')}}">
+				<div class="card">
+					<div style="display:flex; justify-content: center;">
+						<img src="{{ asset('assets/images/reclamos.png') }}" width="120" height="120">
+					</div>
+					<p class="title-card">Participar en algún reclamo</p>
+				</div>
+			</a>
+		</div>
+		<div id="option-validacion" class="col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center">
+			<a href="">
+				<div class="card">
+					<div style="display:flex; justify-content: center;">
+						<img src="{{ asset('assets/images/colaboradores.png') }}" width="120" height="120">
+					</div>
+					<p class="title-card">Colaboradores</p>
+					<br>
+				</div>
+			</a>
+		</div>
+
+		</div>
+	</div>
+
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<br><br>
+				<p style="font-size:12px;">SEDE CENTRAL LIMA SUR: Calle de la Prosa 104, San Borja. </p>
+				<p style="font-size:12px;">SEDE LIMA NORTE: Av. Carlos Izaguirre 988, Urb. Las Palmeras, Los Olivos.<br>
+				E-mail:  consultas@indecopi.gob.pe</p>
+			
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<br><br>
+				<img src="{{ asset('assets/images/logo.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />
+			
+			</div>
+		</div>
+		<br>
+    	<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyright">&copy; 2018 Todos los derechos reservados</p>
+	</div>
+</footer>
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script src="{{asset('assets/vendor/jquery/dist/jquery.js')}}"></script>
+<script src="{{asset('assets/vendor/bootstrap/dist/js/bootstrap.js')}}"></script>
+
+
+{% endblock %}

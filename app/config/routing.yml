@@ -1,3 +1,4 @@
+
 indecopi_usuario:
     resource: "@IndecopiUsuarioBundle/Controller/"
     type:     annotation
@@ -6,3 +7,18 @@ indecopi_usuario:
 #app:
 #    resource: '@AppBundle/Controller/'
 #    type: annotation
+
+indecopi:
+    resource: "@indecopiBundle/Resources/config/routing.yml"
+    prefix:   /control
+
+#app:
+  #  resource: "@AppBundle/Resources/config/routing.yml"
+  #  prefix:   /
+
+#app:
+ 
+ #   resource: '@AppBundle/Controller/'
+ #   type: annotation
+
+
