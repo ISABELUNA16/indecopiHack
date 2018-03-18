@@ -23,7 +23,7 @@ background-repeat: no-repeat;
 	}
 
 .container-cardLogin{
-	height: 100vh;
+	height: 75vh;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;

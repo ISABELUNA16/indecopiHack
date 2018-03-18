@@ -1,9 +1,33 @@
-
-{% extends '::base.html.twig'  %}
-
+{% extends '::base.html.twig' %}
+{% block title %}Indecopi{% endblock %}
 {% block body %}
 
-<section class="section">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bgColor fixed-top" style="background:black">
+        <img src="{{ asset('assets/images/logo.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />  
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">     
+        
+        <span class="navbar-toggler-icon"></span>   
+        </button>   
+       
+        <div class="collapse navbar-collapse" id="navbarText">    
+            <ul class="navbar-nav mr-auto">       
+                <li class="nav-item active">        
+                    <a class="nav-link" href="{{url('indecopi_principalUsuario')}}" style="margin-top:15px;color:#DC6512"><strong>Inicio</strong> <span class="sr-only">(current)</span></a>      
+                </li>       
+                
+            </ul>     
+            <span class="navbar-text">      
+                <a href="{{url('prueba_login')}}"><button class="btn">Acceso al sistema</button></a>    
+            </span>  
+        </div> 
+    </nav>
+
+
+</header>
+
+<section >
 
 {% if error %}
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -14,18 +38,17 @@
   <div class="row">    
     <div class="container-cardLogin col-12 col-sm-10 col-md-6 col-lg-6 col-xl-5 ">
     
-    
-      <div class="card w-100" style="background-color: #F7F7F7;">
+      <div class="card w-80" style="background-color: #F7F7F7;">
 
         <div class="card-body">
 
             <div class="panel-heading">
               <div class="row">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                  <a href="#" class="active" id="login-form-link">Login</a>
+                  <a href="#" class="active" id="login-form-link">Inicia Sesión</a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                  <a href="#"  id="register-form-link">Register</a>
+                  <a href="#"  id="register-form-link">Regístrate</a>
                 </div>
               </div>
               <hr>
@@ -42,36 +65,38 @@
                 <label for="password-log">Contraseña</label>
                 <input  class="form-control" placeholder="Password" type="password" id="password" name="_password" />
               </div>
+              <br>
               <button  type="submit" class="btn btn-primary">Ingresar</button>
             </div>
           </form>
 
             <div class="container-register-view-1" style="display: none;">
               <div class="form-group">
-                <label for="dni">Dni</label>
-                <input type="text" class="form-control" id="dni" aria-describedby="emailHelp" placeholder="Ingresar usuario ...">
+                <label for="dni">DNI</label>
+                <input type="text" class="form-control" id="dni" aria-describedby="emailHelp" placeholder="Ingresar DNI">
                 
               </div>
 
               <div class="form-group">
                 <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingresar Contraseña ...">
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresar Contraseña">
               </div>
 
               <div class="form-group">
                 <label for="apellidoPaterno">Apellido Paterno</label>
-                <input type="text" class="form-control" id="apellidoPaterno" placeholder="Ingresar Contraseña ...">
+                <input type="text" class="form-control" id="apellidoPaterno" placeholder="Ingresar apellido paterno">
               </div>
 
               <div class="form-group">
                 <label for="apellidoMaterno">Apellido Materno</label>
-                <input type="text" class="form-control" id="apellidoMaterno" placeholder="Ingresar Contraseña ...">
+                <input type="text" class="form-control" id="apellidoMaterno" placeholder="Ingresar apellido materno ">
               </div>
 
               <div class="form-group">
                 <label for="correo">Correo</label>
-                <input type="email" class="form-control" id="correo" placeholder="Ingresar Contraseña ...">
+                <input type="email" class="form-control" id="correo" placeholder="Ingresar correo ">
               </div>
+              <br>
               <div class="form-group btn-after-before">
                 <button  class="btn btn-success" id="siguiente-register-1"> Siguiente </button>
               </div>
@@ -142,21 +167,34 @@
                 <button  class="btn btn-primary" id="registrar-form"> Registrar </button>
               </div>
             </div>
-
-
-          
-          
         </div>
       </div>
-    
-
   </div>
-
   </div>
 </div>  
 
-
 </section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">  
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                <br><br><br><br>
+                <p style="font-size:12px;">SEDE CENTRAL LIMA SUR: Calle de la Prosa 104, San Borja. </p>
+                <p style="font-size:12px;">SEDE LIMA NORTE: Av. Carlos Izaguirre 988, Urb. Las Palmeras, Los Olivos.<br>
+                E-mail:  consultas@indecopi.gob.pe</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <br><br>
+                <img src="{{ asset('assets/images/logo_indecopi_chiqui.png') }}" class="img-responsive" style="margin-top:13px;" alt="" />
+            
+            </div>
+        </div>
+        <br>
+        <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyright">&copy; 2018 Todos los derechos reservados</p>
+    </div>
+</footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

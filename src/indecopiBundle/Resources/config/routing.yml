@@ -22,4 +22,9 @@ indecopi_participarReclamo:
     defaults: { _controller: indecopiBundle:Default:participarReclamo}
     methods:  [GET,POST]
 
+indecopi_colaboraciones:
+    path:     /colaboraciones
+    defaults: { _controller: indecopiBundle:Default:colaboraciones}
+    methods:  [GET,POST]
+
 

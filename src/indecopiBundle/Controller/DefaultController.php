@@ -30,4 +30,8 @@ class DefaultController extends Controller
     	return $this->render('indecopiBundle:Default:participar_reclamo.html.twig');   
     }
 
+    public function colaboracionesAction(){
+        return $this->render('indecopiBundle:Default:colaboraciones_usuario.html.twig');
+    }
+
 }
